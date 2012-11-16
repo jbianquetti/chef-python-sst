@@ -20,6 +20,6 @@
 default['sst']['version'] = "0.2.2"
 default['sst']['browsermob-proxy'] = true 
 default['sst']['browsermob-proxy-url'] = "http://cloud.github.com/downloads/webmetrics/browsermob-proxy/browsermob-proxy-2.0-beta-6-bin.zip"
-default['sst']['browsermob-proxy-path'] = "/opt/"
+default['sst']['browsermob-proxy-path'] = "/opt"
 default['sst']['browsermob-proxy-checksum'] = '554dececd3c2e05c7bc4bbdae7ed0e2bbf37b0c7f4d360a35a2ce75706549c87'
 

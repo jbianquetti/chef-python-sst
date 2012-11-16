@@ -1,6 +1,6 @@
 
 if node.chef_environment == "_default" then 
-  Chef::Log.info('Environment is #{node.chef_environment} Executing tests....')
+  Chef::Log.info('Environment is node.chef_environment Executing tests....')
   # transfers  test to  /tmp/
   remote_directory "/tmp/sst-tests" do
       source "sst-tests"
@@ -11,9 +11,9 @@ if node.chef_environment == "_default" then
   
   #  Run sst tests (headless mode)
   execute "SST tests" do
-    command "sst-run -x  -d /tmp/sst-tests"
+    command "sst-run -x  -d /tmp/sst-tests --browsermob=#{node['sst']['browsermob-proxy-path']}/browsermob-proxy/bin/browsermob-proxy"
   end
 else
-  Chef::Log.info('Environment is #{node.chef_environment} Skipping tests....')
+  Chef::Log.info('Environment is node.chef_environment Skipping tests....')
 end 
 

@@ -12,3 +12,7 @@ ark "browsermob-proxy" do
 end
 
 
+# chmod +x bin/browsermob-proxy
+file "#{node['sst']['browsermob-proxy-path']}/browsermob-proxy/bin/browsermob-proxy" do 
+ mode "755" 
+end 

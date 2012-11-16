@@ -37,7 +37,7 @@ Usage
 Simple:  add 'recipe[python-sst]' to your run_list
 
 This cookbook uses a "sub-recipe" convention: 
-  - default.rb simply include otherssub-recipes 
+  - default.rb simply include other sub-recipe. Feel free to change it. 
   - You can edit sub-recipes and change it's beaviour.
 
 Recipes
@@ -53,5 +53,13 @@ Testing
 
 This cookbook uses librarian-chef and vagrant while development
 
-Run  librarian-chef install and then run vagrant up. Also, you may need an ubuntu1204 vbox.
+Run  librarian-chef install and then run vagrant up. You  need an vanilla ubuntu1204 vbox.
+
+Feel free to test with any other unix-like OS. 
+
+
+Todo
+=====
+
+- Testing, testing, testing.... more testing. 
 
